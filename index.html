@@ -6,11 +6,11 @@
     <title>Agency Web</title>
   </head>
   <body>
-    <div class="bg-black text-white">
+    <div class="bg-black text-white overflow-x-hidden">
       <!-- navbar -->
-      <div class="py-5 px-10 flex items-center justify-between">
+      <div class="py-5 px-5 md:px-10 flex items-center justify-between">
         <h2 class="text-[22px]">keyframe</h2>
-        <ul class="uppercase flex items-center gap-4 text-[12px]">
+        <ul class="hidden md:flex uppercase items-center gap-4 text-[12px]">
           <li class="cursor-pointer">How it works</li>
           <div class="w-1 h-1 rounded-full bg-white mb-1"></div>
           <li class="cursor-pointer">Examples</li>
@@ -20,8 +20,9 @@
           <li class="cursor-pointer">Faq</li>
         </ul>
         <div class="space-x-5 text-[12px]">
-          <button class="cursor-pointer">SIGN IN</button>
-          <button class="cursor-pointer border px-4 py-3 rounded-full">
+          <button class="cursor-pointer hidden md:inline">SIGN IN</button>
+          <button
+            class="cursor-pointer border px-2 pt-2 pb-1 md:px-4 md:py-3 rounded-full">
             BOOK AN INTRO CALL
           </button>
         </div>
@@ -42,16 +43,17 @@
           alt=""
           class="absolute w-2 bottom-[10%] right-[40%]" />
         <div
-          class="absolute bottom-[20%] right-[10%] w-24 h-24 border-white border-dotted border rotate-45 rounded-md"></div>
+          class="absolute bottom-[46%] md:bottom-[20%] right-[-5%] md:right-[10%] w-14 h-14 md:w-24 md:h-24 border-white border-dotted border rotate-45 rounded-md"></div>
         <p
-          class="text-[99px] font-light text-center leading-[100px] max-w-6xl relative">
+          class="text-[36px] md:text-[99px] font-light text-center leading-[30px] md:leading-[100px] max-w-6xl relative">
           We make world-class animations that help you grow faster
           <img
             src="/pointer.svg"
             alt=""
-            class="absolute w-7 top-[25%] -rotate-[20deg] left-[30%] z-10" />
+            class="absolute w-3 md:w-7 md:top-[25%] top-[20%] left-[34%] md:left-[30%] -rotate-[20deg] z-10" />
         </p>
-        <p class="mt-10 max-w-[520px] text-xl font-light text-center">
+        <p
+          class="mt-5 md:mt-10 max-w-[520px] text-sm md:text-xl font-light text-center">
           Supercharge your content with animations. Our videos are perfect for
           <span class="bg-[#D8B9FF] text-black px-1 rounded-lg"
             >social media</span
@@ -64,13 +66,13 @@
           >, and more.
         </p>
         <button
-          class="uppercase mt-12 rounded-full border py-6 px-4 font-light">
+          class="uppercase mt-12 rounded-full border py-3 md:py-6 px-4 font-light">
           Get Started
         </button>
       </div>
       <!-- profiles -->
       <div
-        class="max-w-5xl mx-auto mt-20 flex items-center justify-evenly gap-10">
+        class="max-w-5xl mx-auto mt-20 grid grid-cols-2 md:grid-cols-4 items-center justify-evenly gap-5 md:gap-10">
         <div class="flex flex-col items-center gap-1">
           <img
             src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
@@ -105,17 +107,19 @@
         </div>
       </div>
       <!-- boxes -->
-      <div class="px-10 grid grid-cols-3 gap-10 h-[700px] mt-28">
+      <div
+        class="px-5 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-10 md:h-[700px] mt-28">
         <div class="bg-[#D8B9FF] rounded-[20px] p-5 flex flex-col">
           <p
-            class="w-10 h-10 bg-black text-white rounded-full font-bold flex items-center justify-center">
+            class="w-7 h-7 md:w-10 md:h-10 bg-black text-white rounded-full font-bold flex items-center justify-center">
             1
           </p>
           <div class="text-black mt-auto px-10 pb-10">
-            <p class="font-bold text-[44px] leading-[40px]">
+            <p
+              class="font-bold text-[24px] md:text-[44px] leading-[20px] md:leading-[40px]">
               Videos that help you go viral.
             </p>
-            <p class="mt-10 text-xl">
+            <p class="mt-5 md:mt-10 text-[15px] md:text-xl">
               We hire the top 1% of animators world-wide and extensively train
               them in the art of making vidoes that views.
             </p>
@@ -123,14 +127,15 @@
         </div>
         <div class="bg-[#D8B9FF] rounded-[20px] p-5 flex flex-col">
           <p
-            class="w-10 h-10 bg-black text-white rounded-full font-bold flex items-center justify-center">
+            class="w-7 h-7 md:w-10 md:h-10 bg-black text-white rounded-full font-bold flex items-center justify-center">
             2
           </p>
           <div class="text-black mt-auto px-10 pb-10">
-            <p class="font-bold text-[44px] leading-[40px]">
+            <p
+              class="font-bold text-[24px] md:text-[44px] leading-[20px] md:leading-[40px]">
               Share ideas today, we start tomorrow.
             </p>
-            <p class="mt-10 text-xl">
+            <p class="mt-5 md:mt-10 text-[15px] md:text-xl">
               Our team is global and is able to take on new projects in an
               instant. Average turnaround times are 48 hours or less.
             </p>
@@ -138,14 +143,15 @@
         </div>
         <div class="bg-[#D8B9FF] rounded-[20px] p-5 flex flex-col">
           <p
-            class="w-10 h-10 bg-black text-white rounded-full font-bold flex items-center justify-center">
+            class="w-7 h-7 md:w-10 md:h-10 bg-black text-white rounded-full font-bold flex items-center justify-center">
             3
           </p>
           <div class="text-black mt-auto px-10 pb-10">
-            <p class="font-bold text-[44px] leading-[40px]">
+            <p
+              class="font-bold text-[24px] md:text-[44px] leading-[20px] md:leading-[40px]">
               Grow your audience, fast.
             </p>
-            <p class="mt-10 text-xl">
+            <p class="mt-5 md:mt-10 text-[15px] md:text-xl">
               More views, more engagement, and more growth, Get thte exposure
               that your content deserves.
             </p>
@@ -153,18 +159,19 @@
         </div>
       </div>
       <!-- information -->
-      <div class="w-full max-w-7xl flex flex-col mx-auto pt-40">
-        <div class="flex justify-between relative">
+      <div class="w-full max-w-7xl flex flex-col mx-auto pt-20 md:pt-40">
+        <div
+          class="flex flex-col px-5 md:px-0 md:flex-row justify-between relative">
           <img
             src="/asterisk.svg"
             alt=""
             class="absolute w-2 top-[20%] right-[-4%] z-10" />
-          <div class="w-full flex flex-col max-w-[60%] h-full">
+          <div class="w-full flex flex-col md:max-w-[60%] h-full">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEBWFJ93OTHNosIxK_FU0VB1uYgfWuPUmEirh0Da-3yw&s"
               alt=""
               class="w-16 h-16 rounded-full grayscale object-cover" />
-            <p class="mt-10 text-[36px]">
+            <p class="mt-7 md:mt-10 text-[24px] md:text-[36px]">
               "Keyframe's animated videos have performed so far above the
               average post that they're a vital part of my growth strategy now.
               I'm going all-in on animation."
@@ -188,9 +195,12 @@
                     d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
                 </svg>
 
-                <p class="text-[22px] font-bold mt-4">1</p>
-                <p class="text-[22px] font-bold">video</p>
-                <p class="mt-5 text-gray-200/60 text-[12px] uppercase">
+                <p class="text-[14px] md:text-[22px] font-bold mt-2 md:mt-4">
+                  1
+                </p>
+                <p class="text-[14px] md:text-[22px] font-bold">video</p>
+                <p
+                  class="mt-2 md:mt-5 text-gray-200/60 text-[11px] md:text-[12px] uppercase">
                   PUBLISHED ON 4/26
                 </p>
               </div>
@@ -206,9 +216,12 @@
                     stroke-linejoin="round"
                     d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
                 </svg>
-                <p class="text-[22px] font-bold mt-4">10 million</p>
-                <p class="text-[22px] font-bold">views</p>
-                <p class="mt-5 text-gray-200/60 text-[12px] uppercase">
+                <p class="text-[14px] md:text-[22px] font-bold mt-2 md:mt-4">
+                  10 million
+                </p>
+                <p class="text-[14px] md:text-[22px] font-bold">views</p>
+                <p
+                  class="mt-2 md:mt-5 text-gray-200/60 text-[11px] md:text-[12px] uppercase">
                   DURING FIRST WEEK
                 </p>
               </div>
@@ -225,30 +238,34 @@
                     d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
 
-                <p class="text-[22px] font-bold mt-4">30,000</p>
-                <p class="text-[22px] font-bold">followers</p>
-                <p class="mt-5 text-gray-200/60 text-[12px] uppercase">
+                <p class="text-[14px] md:text-[22px] font-bold mt-2 md:mt-4">
+                  30,000
+                </p>
+                <p class="text-[14px] md:text-[22px] font-bold">followers</p>
+                <p
+                  class="mt-2 md:mt-5 text-gray-200/60 text-[11px] md:text-[12px] uppercase">
                   ORGANIC GROWTH
                 </p>
               </div>
             </div>
           </div>
           <div
-            class="border border-gray-400/20 rounded-[20px] w-[30%] flex flex-col items-center justify-center relative">
-            <div class="flex items-center justify-center flex-col gap-4">
+            class="mt-10 md:mt-0 pb-20 md:pb-0 border border-gray-400/20 rounded-[20px] md:w-[30%] flex flex-col items-center justify-center relative">
+            <div
+              class="flex items-center justify-center flex-col gap-4 mt-5 md:mt-0">
               <div
-                class="w-[150px] h-[150px] rounded-full border-2 border-[#68B0A5] flex items-center justify-center relative -z-[1px] after:absolute after:top-0 after:-right-[3px] after:content-[''] after:border-r-[5px] after:border-black after:w-full after:h-full after:rounded-full">
+                class="w-[90px] h-[90px] md:w-[150px] md:h-[150px] rounded-full border-2 border-[#68B0A5] flex items-center justify-center relative -z-[1px] after:absolute after:top-0 after:-right-[3px] after:content-[''] after:border-r-[5px] after:border-black after:w-full after:h-full after:rounded-full">
                 <div
                   class="w-[50%] h-[50%] bg-white blur-[40px] rounded-full"></div>
               </div>
               <p
-                class="text-[12px] font-bold bg-white rounded-lg py-1 text-black px-1">
+                class="text-[10px] md:text-[12px] font-bold bg-white rounded-lg pt-1.5 pb-1 md:pt-1 md:pb-1 text-black px-2 md:px-1">
                 THEY ARE JUST
                 <span class="text-gray-400">ALONE FOR THE RIDE</span>
               </p>
             </div>
             <div
-              class="flex items-center justify-between w-full px-4 absolute bottom-2 pb-4">
+              class="flex items-center justify-between w-full px-4 absolute bottom-2 pb-2 md:pb-4">
               <div class="flex items-center gap-2">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEBWFJ93OTHNosIxK_FU0VB1uYgfWuPUmEirh0Da-3yw&s"
@@ -262,7 +279,8 @@
         </div>
 
         <!-- Box -->
-        <div class="grid grid-cols-3 mt-28 gap-6 h-[250px] text-black">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 mt-14 md:mt-28 gap-7 px-5 md:px-0 md:gap-6 md:h-[250px] text-black">
           <div class="bg-[#D7B9FF] rounded-[22px] px-7 py-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -323,7 +341,7 @@
         </div>
       </div>
       <!-- Latest Videos -->
-      <div class="mt-52 flex flex-col">
+      <div class="mt-36 md:mt-52 flex flex-col">
         <p class="text-[40px] text-center">Latest Videos</p>
         <div
           class="relative mt-20 w-full mx-auto max-w-6xl flex justify-between">
@@ -338,7 +356,7 @@
           <img
             src="/asterisk.svg"
             alt=""
-            class="absolute w-2 top-[50%] right-[30%] z-10" />
+            class="hidden md:block absolute w-2 top-[50%] right-[30%] z-10" />
           <img
             src="/asterisk.svg"
             alt=""
@@ -346,18 +364,14 @@
           <img
             src="/pointer.svg"
             alt=""
-            class="absolute w-10 h-10 top-[-10%] right-[-7%] z-10 rotate-45" />
-          <img
-            src="/pointer.svg"
-            alt=""
-            class="absolute w-10 h-10 top-[-10%] right-[-7%] z-10 rotate-45" />
+            class="absolute w-5 h-5 md:w-10 md:h-10 top-[-10%] right-[7%] md:right-[-7%] z-10 rotate-45" />
           <img
             src="/rocket.svg"
             alt=""
-            class="absolute w-10 h-10 bottom-[40%] left-[-7%] z-10" />
+            class="absolute w-5 h-5 md:w-10 md:h-10 bottom-[4%] left-[5%] md:bottom-[40%] md:left-[-7%] z-10" />
           <!-- 1st video -->
           <div
-            class="flex flex-col gap-3 h-[550px] w-[300px] -rotate-[10deg] border rounded-[20px] border-gray-200/10 px-2 pt-2">
+            class="flex flex-col gap-3 h-[300px] w-[200px] md:h-[550px] md:w-[300px] -rotate-[4deg] md:-rotate-[10deg] border rounded-[20px] border-gray-200/10 px-2 pt-2">
             <div class="relative h-[90%] w-full overflow-hidden rounded-[16px]">
               <img
                 src="https://images.pexels.com/videos/3205789/free-video-3205789.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -369,15 +383,15 @@
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEBWFJ93OTHNosIxK_FU0VB1uYgfWuPUmEirh0Da-3yw&s"
                   alt=""
-                  class="w-7 h-7 grayscale rounded-full object-cover" />
-                <p class="text-[13px]">SM Bloom</p>
+                  class="w-4 h-4 md:w-7 md:h-7 grayscale rounded-full object-cover" />
+                <p class="text-[10px] md:text-[13px]">SM Bloom</p>
               </div>
-              <p class="text-gray-300/60 text-[14px]">305k</p>
+              <p class="text-gray-300/60 text-[9px] md:text-[14px]">305k</p>
             </div>
           </div>
           <!-- 2nd video -->
           <div
-            class="flex flex-col gap-3 h-[550px] w-[300px] rotate-[7deg] mt-20 border rounded-[20px] border-gray-200/10 px-2 pt-2">
+            class="flex flex-col gap-3 h-[300px] w-[200px] md:h-[550px] md:w-[300px] rotate-[7deg] mt-20 border rounded-[20px] border-gray-200/10 px-2 pt-2">
             <div class="relative h-[90%] w-full overflow-hidden rounded-xl">
               <img
                 src="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -389,15 +403,15 @@
                 <img
                   src="https://images.unsplash.com/photo-1623366302587-b38b1ddaefd9?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29uJTIwbG9va2luZyUyMGF0JTIwY2FtZXJhfGVufDB8fDB8fHww"
                   alt=""
-                  class="w-7 h-7 grayscale rounded-full object-cover" />
-                <p class="text-[13px]">DAN KOO</p>
+                  class="w-4 h-4 md:w-7 md:h-7 grayscale rounded-full object-cover" />
+                <p class="text-[10px] md:text-[13px]">DAN KOO</p>
               </div>
-              <p class="text-gray-300/60 text-[14px]">1.5m</p>
+              <p class="text-gray-300/60 text-[9px] md:text-[14px]">1.5m</p>
             </div>
           </div>
           <!-- 3rd video -->
           <div
-            class="flex flex-col gap-3 h-[550px] w-[300px] border rounded-[20px] border-gray-200/10 px-2 pt-2">
+            class="flex flex-col gap-3 h-[300px] w-[200px] md:h-[550px] md:w-[300px] border rounded-[20px] border-gray-200/10 px-2 pt-2">
             <div class="relative h-[90%] w-full overflow-hidden rounded-xl">
               <img
                 src="https://w0.peakpx.com/wallpaper/205/460/HD-wallpaper-sea-beach-beautiful-scene-clouds-deep-sea-natural-graphy-nature-beauty-graphy-lover-portrait.jpg"
@@ -409,27 +423,31 @@
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEBWFJ93OTHNosIxK_FU0VB1uYgfWuPUmEirh0Da-3yw&s"
                   alt=""
-                  class="w-7 h-7 grayscale rounded-full object-cover" />
-                <p class="text-[13px]">SM Bloom</p>
+                  class="w-4 h-4 md:w-7 md:h-7 grayscale rounded-full object-cover" />
+                <p class="text-[10px] md:text-[13px]">SM Bloom</p>
               </div>
-              <p class="text-gray-300/60 text-[14px]">305k</p>
+              <p class="text-gray-300/60 text-[9px] md:text-[14px]">305k</p>
             </div>
           </div>
         </div>
       </div>
       <!-- pricing -->
-      <div class="w-full pt-16 pb-10 px-7 bg-[#D8B9FF] mt-52 rounded-[30px]">
-        <h2 class="text-[80px] text-center font-light text-black">
+      <div
+        class="w-full pt-16 pb-10 px-5 md:px-7 bg-[#D8B9FF] mt-36 md:mt-52 rounded-[30px]">
+        <h2
+          class="text-[36px] md:text-[80px] text-center font-light text-black">
           Supercharge your growth
         </h2>
-        <div class="mt-16 grid grid-cols-3 gap-5 h-[650px]">
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-5 md:h-[650px]">
           <div
-            class="px-5 text-black pt-14 pb-10 border flex flex-col border-black rounded-[20px]">
-            <p class="text-[40px] leading-[10px] font-light">Solo</p>
-            <p class="text-[50px] font-bold">$399/mo</p>
+            class="px-5 text-black pt-10 md:pt-14 pb-5 md:pb-10 border flex flex-col border-black rounded-[20px]">
+            <p class="text-[30px] md:text-[40px] leading-[10px] font-light">
+              Solo
+            </p>
+            <p class="text-[40px] md:text-[50px] font-bold">$399/mo</p>
 
             <div
-              class="bg-black h-12 w-7 rounded-md flex items-center justify-center mt-10">
+              class="bg-black h-12 w-7 rounded-md flex items-center justify-center mt-4 md:mt-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -447,26 +465,29 @@
               Perfect for testing out our videos or one-off requests.
             </p>
             <ul
-              class="mt-10 font-bold ml-10 text-[14px] space-y-2 list-[square]">
+              class="mt-4 md:mt-10 font-bold ml-10 text-[14px] space-y-2 list-[square]">
               <li>Start with just 1 video per month</li>
               <li>Work with a world-class animator</li>
               <li>Pause or cancel anytime</li>
             </ul>
             <button
-              class="text-white bg-black rounded-full px-6 py-4 cursor-pointer mt-auto w-max">
+              class="text-white bg-black rounded-full px-6 py-4 cursor-pointer mt-4 md:mt-auto w-max">
               Get started
             </button>
           </div>
-          <div class="px-5 pt-7 pb-10 bg-black rounded-[20px] flex flex-col">
+          <div
+            class="px-5 pt-7 pb-5 md:pb-10 bg-black rounded-[20px] flex flex-col">
             <p
               class="uppercase px-2 text-[12px] py-1 rounded-lg font-bold bg-[#D8B9FF] w-max text-black ml-auto">
               Most Popular
             </p>
-            <p class="text-[40px] leading-[10px] font-light">Core</p>
-            <p class="text-[50px] font-bold">$1,399/mo</p>
+            <p class="text-[30px] md:text-[40px] leading-[10px] font-light">
+              Core
+            </p>
+            <p class="text-[40px] md:text-[50px] font-bold">$1,399/mo</p>
 
             <div
-              class="text-white bg-white h-12 w-7 rounded-md flex overflow-hidden flex-col items-center justify-center mt-10">
+              class="text-white bg-white h-12 w-7 rounded-md flex overflow-hidden flex-col items-center justify-center mt-4 md:mt-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -502,7 +523,7 @@
               Best for growing creators serious about their brand.
             </p>
             <ul
-              class="mt-10 font-bold ml-10 text-[14px] space-y-2 list-[square]">
+              class="mt-5 md:mt-10 font-bold ml-10 text-[14px] space-y-2 list-[square]">
               <li class="flex items-center gap-1">
                 <div
                   class="-ml-5 w-4 h-4 rounded-full bg-[#D8B9FF] flex items-center justify-center">
@@ -561,17 +582,19 @@
               <li>Work with world-class animators</li>
             </ul>
             <button
-              class="text-white bg-black border-white border rounded-full px-6 py-4 cursor-pointer mt-auto w-max">
+              class="text-white bg-black border-white border rounded-full px-6 py-4 cursor-pointer mt-4 md:mt-auto w-max">
               Get started
             </button>
           </div>
           <div
-            class="px-5 pt-14 pb-10 text-black bg-[#9847FE] rounded-[20px] flex flex-col">
-            <p class="text-[40px] leading-[10px] font-light">Unlimited</p>
-            <p class="text-[50px] font-bold">$4,499/mo</p>
+            class="px-5 pt-10 md:pt-14 pb-5 md:pb-10 text-black bg-[#9847FE] rounded-[20px] flex flex-col">
+            <p class="text-[30px] md:text-[40px] leading-[10px] font-light">
+              Unlimited
+            </p>
+            <p class="text-[40px] md:text-[50px] font-bold">$4,499/mo</p>
 
             <div
-              class="bg-black h-12 w-7 rounded-md flex items-center justify-center mt-10">
+              class="bg-black h-12 w-7 rounded-md flex items-center justify-center mt-4 md:mt-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -587,7 +610,7 @@
               Best for established creators that want serious results.
             </p>
             <ul
-              class="mt-6 font-bold ml-10 text-[14px] space-y-2 list-[square]">
+              class="mt-4 md:mt-6 font-bold ml-10 text-[14px] space-y-2 list-[square]">
               <li class="flex items-center gap-1">
                 <div
                   class="-ml-5 w-4 h-4 rounded-full bg-black flex items-center justify-center">
@@ -665,12 +688,13 @@
               <li>Pause or cancel anytime</li>
             </ul>
             <button
-              class="text-white bg-black rounded-full px-6 py-4 cursor-pointer mt-auto w-max">
+              class="text-white bg-black rounded-full px-6 py-4 cursor-pointer mt-4 md:mt-auto w-max">
               Get started
             </button>
           </div>
         </div>
-        <div class="my-28 grid grid-cols-3 gap-10 px-10 text-black">
+        <div
+          class="my-14 md:my-28 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 px-5 md:px-10 text-black">
           <div class="flex flex-col">
             <div
               class="w-10 h-10 rounded-full border-[3px] border-[#9848FF] flex items-center justify-center">
@@ -687,10 +711,11 @@
                   d="M12 4.5v15m7.5-7.5h-15" />
               </svg>
             </div>
-            <p class="font-bold text-[36px] leading-[40px] mt-5">
+            <p
+              class="font-bold text-[28px] md:text-[36px] leading-[30px] md:leading-[40px] mt-5">
               Subscribe for a<br />month.
             </p>
-            <p class="mt-10 text-[20px] leading-6">
+            <p class="mt-5 md:mt-10 text-[16px] md:text-[20px] leading-6">
               Try us our for a month and you'll see there's no going back. No
               contracts, no headaches, just simple credit card payments.
             </p>
@@ -708,10 +733,11 @@
                   clip-rule="evenodd" />
               </svg>
             </div>
-            <p class="font-bold text-[36px] leading-[40px] mt-5">
+            <p
+              class="font-bold text-[28px] md:text-[36px] leading-[30px] md:leading-[40px] mt-5">
               Make video<br />requests.
             </p>
-            <p class="mt-10 text-[20px] leading-6">
+            <p class="mt-5 md:mt-10 text-[16px] md:text-[20px] leading-6">
               You'll get a world-class animator assigned to you right away.
               They'll help you develop your unique style and create beautiful
               videos.
@@ -733,44 +759,54 @@
                   d="M12 4.5v15m7.5-7.5h-15" />
               </svg>
             </div>
-            <p class="font-bold text-[36px] leading-[40px] mt-5">
+            <p
+              class="font-bold text-[28px] md:text-[36px] leading-[30px] md:leading-[40px] mt-5">
               Start posting your<br />videos tomorrow.
             </p>
-            <p class="mt-10 text-[20px] leading-6">
+            <p class="mt-5 md:mt-10 text-[16px] md:text-[20px] leading-6">
               Our animators always work on a single assignment at a time and
               usually deliver your videos within one business day.
             </p>
           </div>
         </div>
-        <div class="mt-10 grid grid-cols-2 gap-5 h-[250px]">
-          <div class="bg-[#C096F8] p-7 flex flex-col rounded-[25px] text-black">
-            <p class="text-[36px] font-bold">Book a free strategy call</p>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5 md:h-[250px]">
+          <div
+            class="bg-[#C096F8] p-5 md:p-7 flex flex-col rounded-[25px] text-black">
+            <p class="text-[25px] md:text-[36px] font-bold">
+              Book a free strategy call
+            </p>
             <p class="text-[14px] font-bold mt-2">
               Learn about how we can help you grow your audience
             </p>
             <button
-              class="text-white uppercase bg-black rounded-full px-6 py-4 cursor-pointer mt-auto w-max text-[13px]">
+              class="text-white uppercase bg-black rounded-full px-4 pt-2 pb-1 md:px-6 md:py-4 cursor-pointer mt-2 md:mt-auto w-max text-[13px]">
               Book a call
             </button>
           </div>
-          <div class="bg-[#C096F8] p-7 flex flex-col rounded-[25px] text-black">
-            <p class="text-[36px] font-bold">Refer a friend and earn</p>
+          <div
+            class="bg-[#C096F8] p-5 md:p-7 flex flex-col rounded-[25px] text-black">
+            <p class="text-[25px] md:text-[36px] font-bold">
+              Refer a friend and earn
+            </p>
             <p class="text-[14px] font-bold mt-2">
               Earn 5% monthly recurring commissions for each referral.
             </p>
             <button
-              class="text-white uppercase bg-black rounded-full px-6 py-4 cursor-pointer mt-auto w-max text-[13px]">
+              class="text-white uppercase bg-black rounded-full px-4 pt-2 pb-1 md:px-6 md:py-4 cursor-pointer mt-2 md:mt-auto w-max text-[13px]">
               Join now
             </button>
           </div>
         </div>
       </div>
       <!-- footer -->
-      <div class="pt-20 pb-5 px-10 flex flex-col">
-        <div class="flex gap-20 flex-1">
+      <div class="pt-20 pb-5 px-5 md:px-10 flex flex-col">
+        <div class="flex flex-col md:flex-row gap-20 flex-1">
           <div class="flex flex-col w-full">
-            <p class="text-[60px]">Have questions?</p>
-            <div class="mt-auto">
+            <p
+              class="text-[40px] leading-[40px] md:leading-normal md:text-[60px]">
+              Have questions?
+            </p>
+            <div class="hidden md:block mt-auto">
               <p class="text-xl leading-[18px]">Have more questions?</p>
               <p class="font-light text-[14px] text-gray-400/70">
                 Book a free strategy call.
@@ -784,11 +820,11 @@
           <div class="flex flex-col gap-4 w-full">
             <div
               class="flex items-center justify-between gap-4 border-b border-b-gray-600/40 pb-3 cursor-pointer">
-              <p class="text-[26px]">
+              <p class="text-[16px] md:text-[26px]">
                 How much time am I actually getting for my money?
               </p>
               <div
-                class="w-8 h-8 rounded-full border border-white flex items-center justify-center">
+                class="w-4 h-4 md:w-8 md:h-8 rounded-full border border-white flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -805,11 +841,11 @@
             </div>
             <div
               class="flex items-center justify-between gap-4 border-b border-b-gray-600/40 pb-3 cursor-pointer">
-              <p class="text-[26px]">
+              <p class="text-[16px] md:text-[26px]">
                 How do I communicate feedback/revisions?
               </p>
               <div
-                class="w-8 h-8 rounded-full border border-white flex items-center justify-center">
+                class="w-4 h-4 md:w-8 md:h-8 rounded-full border border-white flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -826,9 +862,11 @@
             </div>
             <div
               class="flex items-center justify-between gap-4 border-b border-b-gray-600/40 pb-3 cursor-pointer">
-              <p class="text-[26px]">How does my month start? Can I pause?</p>
+              <p class="text-[16px] md:text-[26px]">
+                How does my month start? Can I pause?
+              </p>
               <div
-                class="w-8 h-8 rounded-full border border-white flex items-center justify-center">
+                class="w-4 h-4 md:w-8 md:h-8 rounded-full border border-white flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -845,11 +883,11 @@
             </div>
             <div
               class="flex items-center justify-between gap-4 border-b border-b-gray-600/40 pb-3 cursor-pointer">
-              <p class="text-[26px]">
+              <p class="text-[16px] md:text-[26px]">
                 How do I know you won't delay the turnaround time?
               </p>
               <div
-                class="w-8 h-8 rounded-full border border-white flex items-center justify-center">
+                class="w-4 h-4 md:w-8 md:h-8 rounded-full border border-white flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -866,11 +904,11 @@
             </div>
             <div
               class="flex items-center justify-between gap-4 border-b border-b-gray-600/40 pb-3 cursor-pointer">
-              <p class="text-[26px]">
+              <p class="text-[16px] md:text-[26px]">
                 I'm unhappy with the work. How do I get a refund?
               </p>
               <div
-                class="w-8 h-8 rounded-full border border-white flex items-center justify-center">
+                class="w-4 h-4 md:w-8 md:h-8 rounded-full border border-white flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -887,9 +925,11 @@
             </div>
             <div
               class="flex items-center justify-between gap-4 border-b border-b-gray-600/40 pb-3 cursor-pointer">
-              <p class="text-[26px]">How will you share your work?</p>
+              <p class="text-[16px] md:text-[26px]">
+                How will you share your work?
+              </p>
               <div
-                class="w-8 h-8 rounded-full border border-white flex items-center justify-center">
+                class="w-4 h-4 md:w-8 md:h-8 rounded-full border border-white flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -906,9 +946,11 @@
             </div>
             <div
               class="flex items-center justify-between gap-4 border-b border-b-gray-600/40 pb-3 cursor-pointer">
-              <p class="text-[26px]">Why wouldn't I just hire a Freelancer?</p>
+              <p class="text-[16px] md:text-[26px]">
+                Why wouldn't I just hire a Freelancer?
+              </p>
               <div
-                class="w-8 h-8 rounded-full border border-white flex items-center justify-center">
+                class="w-4 h-4 md:w-8 md:h-8 rounded-full border border-white flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -925,11 +967,11 @@
             </div>
             <div
               class="flex items-center justify-between gap-4 border-b border-b-gray-600/40 pb-3 cursor-pointer">
-              <p class="text-[26px]">
+              <p class="text-[16px] md:text-[26px]">
                 What do I need to give you to get started?
               </p>
               <div
-                class="w-8 h-8 rounded-full border border-white flex items-center justify-center">
+                class="w-4 h-4 md:w-8 md:h-8 rounded-full border border-white flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -946,9 +988,11 @@
             </div>
             <div
               class="flex items-center justify-between gap-4 border-b border-b-gray-600/40 pb-3 cursor-pointer">
-              <p class="text-[26px]">Is there a limit on file size?</p>
+              <p class="text-[16px] md:text-[26px]">
+                Is there a limit on file size?
+              </p>
               <div
-                class="w-8 h-8 rounded-full border border-white flex items-center justify-center">
+                class="w-4 h-4 md:w-8 md:h-8 rounded-full border border-white flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -964,8 +1008,19 @@
               </div>
             </div>
           </div>
+          <div class="md:hidden mt-auto">
+            <p class="text-xl leading-[18px]">Have more questions?</p>
+            <p class="font-light text-[14px] text-gray-400/70">
+              Book a free strategy call.
+            </p>
+            <button
+              class="cursor-pointer border px-6 py-4 text-[11px] font-bold mt-5 rounded-full uppercase">
+              Book an intro call
+            </button>
+          </div>
         </div>
-        <div class="flex items-center justify-between mt-20">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between mt-20">
           <p class="text-[22px]">keyframe</p>
           <p class="text-[12px]">
             site develop by
