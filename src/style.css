@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Nexa;
+  src: url('/fonts/NexaRegular.otf');
+}
+
+@font-face {
+  font-family: Nexa;
+  src: url('/fonts/NexaLight.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Nexa;
+  src: url('/fonts/NexaBold.otf');
+  font-weight: bold;
+}
+
 body,
 html {
   height: 100%;
